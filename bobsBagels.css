@@ -1,6 +1,7 @@
 #navbar {
     display: flex;
     align-items: center;
+    justify-items: center;
     text-align: center;
     background-color: rgb(38, 72, 139);
     padding: 10px;
@@ -22,27 +23,43 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 5%;
+    -webkit-text-stroke-color: black;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
-.navbar-brand{
-    width: 20px;
-    height: 20px;
-    
 
+#navbarNavAltMarkup{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: right;
+    
+    margin-right: 20px;
+
+}
+#brand{
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    padding-right: 20px;
 }
 
 #content{
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
     align-items: center;
+    
+    margin: 50px;
+    padding: 10px;
+    border: 10px solid black;
 }
 
 #leftSide{    
     flex: 1;
     max-width: 50%;
+    align-self: flex-start;
 }
 
 #rightSide{
